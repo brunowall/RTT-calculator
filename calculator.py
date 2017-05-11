@@ -1,16 +1,15 @@
 import math
 import sys
 def calcula_rtt():
-	num_rtt = int(raw_input("Digite o numero de RTTS"))
-	rttinit =  float(raw_input("Digite o RTTS incial"))
+	num_rtt = int(raw_input("Digite o numero de RTTS"+"\n"))
+	rttinit =  float(raw_input("Digite o RTT incial"+"\n"))
 	
 
-	print("Media inicial: " + str(rttinit) + " ") 
-	print("Desvio inicial: " + str(rttinit) + "\n")
 	media = rttinit
 	desvio = 0.0
 	if num_rtt == 1:
-		print("Media = ", str(media))
+		print("Media inicial: " + str(rttinit) + " ") 
+		print("Desvio inicial: " + str(0.0) + "\n")
 		sys.exit(0)
 
 
